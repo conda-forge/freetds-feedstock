@@ -17,7 +17,6 @@ build:
     - vc9   # [win and py27]
     - vc10  # [win and py == 34]
     - vc14  # [win and py >= 35]
-  skip:
 
 requirements:
   build:
