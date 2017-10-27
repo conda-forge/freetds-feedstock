@@ -21,7 +21,7 @@ build:
 requirements:
   build:
     - openssl 1.0.*
-    - unixodbc
+    - unixodbc  # [unix]
     - readline  # [not win]
     - toolchain
     - cmake  # [win]
@@ -31,7 +31,7 @@ requirements:
     - vc  14  # [win and py >= 35]
   run:
     - openssl 1.0.*
-    - unixodbc
+    - unixodbc  # [unix]
     - readline  # [not win]
 
 test:
