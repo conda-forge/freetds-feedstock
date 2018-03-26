@@ -1,6 +1,6 @@
 {% set name = 'freetds' %}
-{% set version = "1.00.44" %}
-{% set sha256 = "b4376e685e6e133e5c4dc9b1099ddfc6cd264f5313ad5e4c26879f7ae9276194" %}
+{% set version = "1.00.83" %}
+{% set sha256 = "e587645e82db39aa9519d8003eff980fcea0526bdecc59953f076180c5bd9b09" %}
 
 package:
   name: {{ name }}
@@ -14,7 +14,7 @@ source:
     - 0001-Update-CMakeLists.txt-to-define-INSTALL-files-target.patch
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
