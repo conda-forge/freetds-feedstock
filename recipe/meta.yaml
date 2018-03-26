@@ -10,10 +10,11 @@ source:
   fn: freetds-{{ version }}.tar.gz
   url: ftp://ftp.freetds.org/pub/freetds/stable/freetds-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    - 0001-Update-CMakeLists.txt-to-define-INSTALL-files-target.patch
 
 build:
   number: 2
-  skip: True  # [win]
 
 requirements:
   build:
@@ -23,6 +24,7 @@ requirements:
     - unixodbc  # [unix]
     - readline  # [not win]
     - cmake  # [win]
+    - jom  # [win]
   run:
     # Should be taken care of by run_exports
     # - unixodbc  # [unix]

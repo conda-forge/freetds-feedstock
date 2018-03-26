@@ -1,7 +1,7 @@
 
 set OPENSSL_ROOT_DIR=%LIBRARY_PREFIX%
 
-set CMAKE_GENERATOR="NMake Makefiles JOM"
+set "CMAKE_GENERATOR=NMake Makefiles JOM"
 mkdir build
 cd build
 
