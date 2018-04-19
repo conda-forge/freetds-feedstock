@@ -26,8 +26,10 @@ requirements:
     - openssl
     - unixodbc  # [unix]
     - readline  # [not win]
+    - make   # [not win]
     - cmake  # [win]
     - jom  # [win]
+    - libiconv  # [osx]
   run:
     # Should be taken care of by run_exports
     # - unixodbc  # [unix]
