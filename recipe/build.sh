@@ -3,9 +3,11 @@
 set -e
 
 ./configure \
+  --enable-krb5 \
   --prefix=$PREFIX \
   --with-unixodbc=$PREFIX \
   --with-openssl=$PREFIX \
+  --with-krb5=$PREFIX \
   --host=$HOST \
   --build=$BUILD
 make

@@ -1,6 +1,6 @@
 {% set name = 'freetds' %}
-{% set version = "1.00.97" %}
-{% set sha256 = "53e6c2fcec260f23933fe30f70324c7f26496cb18c4fa8c48466d28090415b7a" %}
+{% set version = "1.1.15" %}
+{% set sha256 = "ebeb9060bcfe54f13ab0fbf8cb72ac95cc6cefbe728a30247516d55334d66a03" %}
 
 package:
   name: {{ name }}
@@ -10,8 +10,6 @@ source:
   fn: freetds-{{ version }}.tar.gz
   url: ftp://ftp.freetds.org/pub/freetds/stable/freetds-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - 0001-Update-CMakeLists.txt-to-define-INSTALL-files-target.patch
 
 build:
   number: 0
@@ -25,12 +23,14 @@ requirements:
   host:
     - openssl
     - unixodbc  # [unix]
+    - krb5      # [unix]
     - readline  # [not win]
     - make   # [not win]
     - cmake  # [win]
     - jom  # [win]
     - libiconv  # [osx]
   run:
+    - krb5     # [unix]
     # Should be taken care of by run_exports
     # - unixodbc  # [unix]
     # - readline  # [not win]
