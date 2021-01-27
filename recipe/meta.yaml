@@ -8,7 +8,7 @@ package:
 
 source:
   fn: freetds-{{ version }}.tar.gz
-  url: ftp://ftp.freetds.org/pub/freetds/stable/freetds-{{ version }}.tar.gz
+  url: http://www.freetds.org/files/stable/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
 
 build:
