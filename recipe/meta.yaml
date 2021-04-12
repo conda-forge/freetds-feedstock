@@ -11,6 +11,7 @@ source:
   url: http://www.freetds.org/files/stable/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
   patches:
+    # Remove from CMakeList.txt the mention of gperf package that works only on unix but not win
     - fix_gperf.patch  # [win]
 
 build:
