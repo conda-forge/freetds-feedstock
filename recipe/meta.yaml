@@ -29,6 +29,7 @@ requirements:
     - cmake  # [win]
     - jom  # [win]
     - libiconv  # [osx]
+    - perl  # [win]
   run:
     - krb5     # [unix]
     # Should be taken care of by run_exports
