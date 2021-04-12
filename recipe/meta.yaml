@@ -30,6 +30,7 @@ requirements:
     - jom  # [win]
     - libiconv  # [osx]
     - perl  # [win]
+    - gperf  # [win]
   run:
     - krb5     # [unix]
     # Should be taken care of by run_exports
