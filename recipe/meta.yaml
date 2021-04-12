@@ -11,7 +11,7 @@ source:
   url: http://www.freetds.org/files/stable/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
   patches:
-    - fix_gerf.patch  # [win]
+    - fix_gperf.patch  # [win]
 
 build:
   number: 0
