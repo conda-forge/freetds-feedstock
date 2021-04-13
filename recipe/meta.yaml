@@ -47,11 +47,11 @@ test:
 
 about:
   home: http://www.freetds.org/
-  license: GPL-2
+  license: LGPL
   license_file: 
-    - COPYING.txt
+    - COPYING_LIB.txt
   summary: FreeTDS is a free implementation of Sybase's DB-Library, CT-Library, and ODBC libraries
-  license_family: GPL2
+  license_family: LGPL
   doc_url: http://www.freetds.org/docs.html
   dev_url: https://github.com/FreeTDS/freetds
 
