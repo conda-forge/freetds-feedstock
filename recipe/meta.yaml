@@ -11,8 +11,10 @@ source:
   url: http://www.freetds.org/files/stable/{{ name }}-{{ version }}.tar.bz2
   sha256: {{ sha256 }}
   patches:
-    # Remove from CMakeList.txt the mention of gperf package that works only on unix but not win
-    - fix_gperf.patch  # [win]
+    # 4/13/2021 found the error on win platform with gperf package. The patch should be remove in the next release.
+    # Do not fail using CMake if gperf is not present but not needed
+    #  gperf is needed only if you need to generate some files, not always.
+    - 67937d44f0a2192faee7351328612299b9e96acf.patch  # [win]
 
 build:
   number: 0
