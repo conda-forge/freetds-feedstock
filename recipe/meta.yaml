@@ -19,6 +19,7 @@ build:
 
 requirements:
   build:
+    - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - libtool  # [not win]
   host:
@@ -43,8 +44,6 @@ test:
     - conda-build  # [osx]
   commands:
     - tsql -C
-    - conda inspect linkages freetds  # [linux or osx]
-    - conda inspect objects freetds  # [osx]
 
 about:
   home: http://www.freetds.org/
