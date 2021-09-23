@@ -1,11 +1,11 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '11.0'
+- '10.9'
 c_compiler:
 - clang
 c_compiler_version:
 - '11'
 channel_sources:
-- conda-forge/label/rust_dev,conda-forge
+- conda-forge,defaults
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -15,20 +15,18 @@ cxx_compiler_version:
 libiconv:
 - '1.16'
 macos_machine:
-- arm64-apple-darwin20.0.0
+- x86_64-apple-darwin13.4.0
 openssl:
 - 1.1.1
 pin_run_as_build:
   libiconv:
     max_pin: x.x
-  openssl:
-    max_pin: x.x.x
   readline:
     max_pin: x
 readline:
 - '8'
 target_platform:
-- osx-arm64
+- osx-64
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
