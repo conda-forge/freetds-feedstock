@@ -38,7 +38,7 @@ requirements:
     # - readline  # [not win]
 
 test:
-  - requires:
+  requires:
     # To use 'conda inspect', install conda-build
     - conda-build  # [osx]
   commands:
