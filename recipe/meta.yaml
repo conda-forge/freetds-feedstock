@@ -39,9 +39,6 @@ requirements:
     # - readline  # [not win]
 
 test:
-  requires:
-    # To use 'conda inspect', install conda-build
-    - conda-build  # [osx]
   commands:
     - tsql -C
     - conda inspect linkages freetds  # [linux or osx]
