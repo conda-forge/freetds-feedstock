@@ -33,9 +33,6 @@ requirements:
     - perl  # [win]
   run:
     - krb5     # [unix]
-    # Should be taken care of by run_exports
-    # - unixodbc  # [unix]
-    # - readline  # [not win]
 
 test:
   commands:
