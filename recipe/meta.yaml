@@ -19,16 +19,17 @@ build:
 
 requirements:
   build:
+    - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - libtool  # [not win]
+    - make   # [not win]
+    - cmake  # [win]
+    - jom  # [win]
   host:
     - openssl
     - unixodbc  # [unix]
     - krb5      # [unix]
     - readline  # [not win]
-    - make   # [not win]
-    - cmake  # [win]
-    - jom  # [win]
     - libiconv  # [osx]
     - perl  # [win]
   run:
