@@ -1,10 +1,9 @@
 set OPENSSL_ROOT_DIR=%LIBRARY_PREFIX%
 
-set "CMAKE_GENERATOR=NMake Makefiles JOM"
 mkdir build
 cd build
 
-cmake -G "%CMAKE_GENERATOR%" ^
+cmake -GNinja ^
          -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
          -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
          -DCMAKE_BUILD_TYPE=Release ^
