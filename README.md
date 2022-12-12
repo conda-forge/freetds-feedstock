@@ -3,7 +3,7 @@ About freetds
 
 Home: http://www.freetds.org/
 
-Package license: LGPL-2.0 AND GPL-2.0
+Package license: LGPL-2.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/freetds-feedstock/blob/main/LICENSE.txt)
 
@@ -42,20 +42,6 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=330&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/freetds-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_openssl3" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_openssl1.1.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=330&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/freetds-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_openssl1.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_openssl3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=330&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/freetds-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_openssl3" alt="variant">
                 </a>
               </td>
             </tr><tr>
