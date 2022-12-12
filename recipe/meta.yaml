@@ -29,7 +29,7 @@ requirements:
     - unixodbc  # [unix]
     - krb5      # [unix]
     - readline  # [not win]
-    - libiconv  # [osx]
+    - libiconv  # [unix]
     - perl  # [win]
   run:
     - krb5     # [unix]
