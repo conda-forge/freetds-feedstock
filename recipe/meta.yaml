@@ -13,6 +13,7 @@ source:
 
 build:
   number: 0
+  skip: true # [osx-arm64]
   run_exports:
     # https://abi-laboratory.pro/tracker/timeline/freetds/
     - {{ pin_subpackage('freetds') }}
@@ -48,7 +49,7 @@ test:
 
 about:
   home: http://www.freetds.org/
-  license: LGPL-2.0 AND GPL-2.0
+  license: LGPL-2.0-only
   license_file: COPYING_LIB.txt
   summary: FreeTDS is a free implementation of Sybase's DB-Library, CT-Library, and ODBC libraries
   license_family: LGPL
