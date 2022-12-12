@@ -41,8 +41,6 @@ requirements:
 test:
   commands:
     - tsql -C
-    - conda inspect linkages freetds  # [linux or osx]
-    - conda inspect objects freetds  # [osx]
 
 about:
   home: http://www.freetds.org/
