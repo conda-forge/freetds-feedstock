@@ -5,6 +5,11 @@ cp -r ${BUILD_PREFIX}/share/libtool/build-aux/config.* .
 
 set -e
 
+if [[ "${build_platform}" != "${target_platform}" ]]; then
+  # Don't try to extract information from the odbc_config executable
+  rm $PREFIX/bin/odbc_config
+fi
+
 ./configure \
   --enable-krb5 \
   --prefix=$PREFIX \
