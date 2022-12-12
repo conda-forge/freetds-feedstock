@@ -23,7 +23,7 @@ requirements:
     - libtool  # [not win]
     - make   # [not win]
     - cmake  # [win]
-    - jom  # [win]
+    - ninja  # [win]
   host:
     - openssl
     - unixodbc  # [unix]
