@@ -19,8 +19,9 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
-    - libtool  # [not win]
-    - make   # [not win]
+    - libtool  # [unix]
+    - make   # [unix]
+    - pkg-config
     - cmake  # [win]
     - ninja  # [win]
   host:
