@@ -17,7 +17,7 @@ fi
   --with-openssl=$PREFIX \
   --with-krb5=$PREFIX \
   --host=$HOST \
-  --build=$BUILD
+  --build=$BUILD || (cat config.log; exit 1)
 make
 # To run this check we need to have access to a mssql instance.
 # make check
