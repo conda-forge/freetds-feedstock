@@ -1,4 +1,3 @@
-
 set OPENSSL_ROOT_DIR=%LIBRARY_PREFIX%
 
 mkdir build

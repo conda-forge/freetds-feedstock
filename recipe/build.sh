@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* .
 
@@ -9,7 +10,14 @@ if [[ "${build_platform}" != "${target_platform}" ]]; then
   rm $PREFIX/bin/odbc_config
 fi
 
-./configure --prefix $PREFIX --with-unixodbc=$PREFIX --with-openssl=$PREFIX || (cat config.log; exit 1)
+./configure \
+  --enable-krb5 \
+  --prefix=$PREFIX \
+  --with-unixodbc=$PREFIX \
+  --with-openssl=$PREFIX \
+  --with-krb5=$PREFIX \
+  --host=$HOST \
+  --build=$BUILD || (cat config.log; exit 1)
 make
 # To run this check we need to have access to a mssql instance.
 # make check
