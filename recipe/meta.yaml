@@ -10,7 +10,7 @@ source:
   sha256: 1d8561d57c71991a28f4681343785c23a6a3eb54d5bcd23897d07e3825ff2d56
 
 build:
-  number: 0
+  number: 1
   run_exports:
     # https://abi-laboratory.pro/tracker/timeline/freetds/
     - {{ pin_subpackage('freetds') }}
