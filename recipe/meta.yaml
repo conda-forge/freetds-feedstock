@@ -1,5 +1,5 @@
 {% set name = "freetds" %}
-{% set version = "1.4.7" %}
+{% set version = "1.4.8" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://www.freetds.org/files/stable/{{ name }}-{{ version }}.tar.bz2
-  sha256: c5302e4268ed103dac2f7308cfc7097ee293907cff729b10c740d007f7a1ad95
+  sha256: 2b35da2f1c66c54ac4f6e403db3a4ab983a12e98b86bbc4c82267169ff93ab69
 
 build:
   number: 0
