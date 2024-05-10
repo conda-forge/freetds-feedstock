@@ -1,5 +1,5 @@
 {% set name = "freetds" %}
-{% set version = "1.4.12" %}
+{% set version = "1.4.13" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: http://www.freetds.org/files/stable/{{ name }}-{{ version }}.tar.bz2
-  sha256: a2cb8993a46417e0503e7b8488463d91b8c5d9a4601d6ee2484d28f56d3a7075
+  sha256: 4530ba865cc5bcefc7b69095ad6538d7e3aaf1c7315185edd1b5b0241bf7aa0b
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
   build:
     - gnuconfig  # [unix]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - libtool  # [unix]
     - make   # [unix]
     - pkg-config
