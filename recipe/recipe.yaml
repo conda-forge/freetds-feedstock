@@ -22,6 +22,7 @@ requirements:
     - pkg-config
     - if: unix
       then: 
+        - automake 1.16.*
         - gnuconfig
         - make
         - libtool
