@@ -23,6 +23,7 @@ requirements:
     - if: unix
       then: 
         - automake 1.16.*
+        - gettext-tools
         - gnuconfig
         - make
         - libtool
