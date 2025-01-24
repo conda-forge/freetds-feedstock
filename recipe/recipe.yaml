@@ -25,6 +25,7 @@ requirements:
         - autoconf
         - automake
         - gettext-tools
+        - gperf
         - make
         - libtool
     - if: win
