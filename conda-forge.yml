@@ -9,3 +9,4 @@ github:
 bot:
   automerge: true
 test: native_and_emulated
+conda_install_tool: pixi
