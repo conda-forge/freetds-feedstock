@@ -9,8 +9,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/FreeTDS/freetds/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 4cd74e8134016b94b698b76eb5ad071a04a3d5ad002383a460460fdf3c57d16f
+  url: https://www.freetds.org/files/stable/freetds-${{ version }}.tar.gz
+  sha256: f555ac2bf31d99aad23561ac9558d8676eae1e01ace6ee7807d3af1dcc26d534
 
 build:
   number: 0
@@ -22,10 +22,7 @@ requirements:
     - pkg-config
     - if: unix
       then: 
-        - autoconf
-        - automake
-        - gettext-tools
-        - gperf
+        - gnuconfig
         - make
         - libtool
     - if: win
