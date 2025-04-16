@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: freetds
-  version: 1.4.26
+  version: "1.4.27"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://www.freetds.org/files/stable/freetds-${{ version }}.tar.gz
-  sha256: f555ac2bf31d99aad23561ac9558d8676eae1e01ace6ee7807d3af1dcc26d534
+  sha256: 671a861b1ffd44b8a322aea395b63f2c10a6b9e9740468b1e1abeed68386c78f
 
 build:
   number: 0
@@ -21,22 +21,22 @@ requirements:
     - ${{ stdlib("c") }}
     - pkg-config
     - if: unix
-      then: 
+      then:
         - automake 1.16.*
         - gettext-tools
         - gnuconfig
         - make
         - libtool
     - if: win
-      then: cmake
-    - if: win
-      then: ninja
+      then:
+        - cmake
+        - ninja
   host:
     - openssl
     - if: unix
-      then: unixodbc
-    - if: unix
-      then: krb5
+      then:
+        - unixodbc
+        - krb5
     - if: not win
       then: readline
     - if: unix
