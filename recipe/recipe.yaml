@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: freetds
-  version: "1.5.2"
+  version: "1.5.3"
 
 package:
   name: ${{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://www.freetds.org/files/stable/freetds-${{ version }}.tar.gz
-  sha256: 17d16b5ac03c25f40a0115945a48ddeb2a4abe20d01a89f04304e18323d01585
+  sha256: 867deb93435dbc31882b5cd4c68b43468f0ac44096c8de151f7038f068694fb1
 
 build:
   number: 0
