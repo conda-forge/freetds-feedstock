@@ -1,0 +1,7 @@
+# Build against Perl 5.44 ahead of the conda-forge-wide migration
+# (conda-forge/conda-forge-pinning-feedstock#8986). On Windows the 5.32
+# Strawberry build ships MinGW runtime DLLs into Library\bin that clash with
+# conda-forge's libstdcxx/libgcc/libwinpthread (conda-forge/perl-feedstock#89).
+# Remove this file once the pinning moves to 5.44.
+perl:
+  - '5.44'

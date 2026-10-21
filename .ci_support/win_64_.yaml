@@ -9,6 +9,6 @@ channel_targets:
 openssl:
 - '3.5'
 perl:
-- 5.32.1
+- '5.44'
 target_platform:
 - win-64
